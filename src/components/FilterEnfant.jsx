@@ -1,4 +1,4 @@
-function MapEnfant(props){
+function FilterEnfant(props){
   return(
     <div className="contact">
       <p>Je suis {props.name}</p>
@@ -7,4 +7,4 @@ function MapEnfant(props){
     </div>
   );
 }
-export default MapEnfant;
+export default FilterEnfant;

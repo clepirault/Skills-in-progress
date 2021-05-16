@@ -5,3 +5,26 @@
 .props {
   background-color: springgreen;
 }
+
+.filter {
+  background-color: violet;
+}
+
+.contact {
+  padding-bottom: 1.5em;
+}
+
+.filterButton {
+  background-color: darkturquoise;
+}
+.todolist {
+  background-color: springgreen;
+  text-align: center;
+}
+.counter {
+  background-color: silver;
+  text-align: center;
+}
+.form {
+  background-color: violet;
+}
