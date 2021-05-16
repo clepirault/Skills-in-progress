@@ -1,0 +1,9 @@
+.header{
+  background-color: rgb(25, 50, 133);
+  width: 100vw;
+  color: white;
+}
+.headerNav{
+  display: flex;
+  justify-content: space-around;
+}
