@@ -8,6 +8,7 @@ function Form(){
   const [city, setCity] = useState("");
   const handleSubmit = (event)=>{
     event.preventDefault();
+    console.log("submit");
   }
   return(
     <div className="form">

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import Counter from './components/Counter';
 import FilterButton from './components/FilterButton';
@@ -7,16 +8,22 @@ import Header from './components/Header';
 import Infos from './components/Infos';
 import MapParent from './components/MapParent';
 import PropsParent from './components/PropsParent';
+import Button from './components/PropsStateButton';
+import Checkbox from './components/PropsStateCheckbox';
 import ToDoList from './components/ToDoList';
 const list = [
   { name: 'Clémence', age: 29, city: 'Nantes' },
   { name: 'Julien', age: 30, city: 'Paris' },
-  {name: 'Alice', age: 27, city: 'Lyon'},
-  {name: 'Thomas', age: 32, city: 'Nantes'}
+  { name: 'Alice', age: 27, city: 'Lyon' },
+  { name: 'Thomas', age: 32, city: 'Nantes' },
 ];
 function App() {
+  const [active, setActive] = useState(true);
+  const handleChange = () => {
+    setActive(!active);
+  };
   return (
-    <div className="App">
+    <div className='App'>
       <Header />
       <Infos />
       <PropsParent />
@@ -26,6 +33,12 @@ function App() {
       <ToDoList />
       <Counter />
       <Form />
+      <div className="checkbox">
+        <p>Props & State</p>
+        <h1>Click the button to check the box</h1>
+        <Button active={active} handleChange={handleChange} />
+        <Checkbox active={active} handleChange={handleChange} />
+      </div>
     </div>
   );
 }

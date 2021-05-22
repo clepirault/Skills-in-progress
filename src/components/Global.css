@@ -26,5 +26,9 @@
   text-align: center;
 }
 .form {
+  display: none;
+}
+.checkbox {
+  text-align: center;
   background-color: violet;
 }
