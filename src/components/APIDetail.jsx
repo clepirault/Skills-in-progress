@@ -1,11 +1,12 @@
-function APIDetail({item}) {
+import './Global.css';
+
+function APIDetail(props) {
   return (
-    item && (
-    <div>
-      <h1>Name: {item.name} </h1>
-      <h2>House: {item.house} </h2>
-      <img src={item.image} alt={item.name} />
-    </div>)
+    <div className="apiDetail">
+      <h1>Name: {props.name} </h1>
+      <h2>House: {props.house} </h2>
+      <img className="apiImg" src={props.image} alt={props.name} />
+    </div>
   );
 }
 
