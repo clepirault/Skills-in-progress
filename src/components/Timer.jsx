@@ -4,13 +4,13 @@ import './Global.css';
 function Timer() {
   const [timer, setTimer] = useState(60);
   useEffect(() => {
-    console.log("compte à rebours lancé");
+    console.log('compte à rebours lancé');
     const interval = setInterval(() => {
       setTimer((prevState) => prevState - 1);
     }, 1000);
     return () => {
       clearInterval(interval);
-      console.log("compte à rebours interrompu");
+      console.log('compte à rebours interrompu');
     };
   }, []);
   return (

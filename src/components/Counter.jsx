@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import './Global.css';
 
-function Counter(){
+function Counter() {
   const [counter, setCounter] = useState(0);
   const handleClick = () => {
-    setCounter(counter +1);
-  }
-  return(
-    <div className="counter">
+    setCounter(counter + 1);
+  };
+  return (
+    <div className='counter'>
       <p>Un autre exercice simple :</p>
       <h1>Compteur basique</h1>
       <h2>{counter}</h2>

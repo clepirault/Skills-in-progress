@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import APIList from './components/APIList';
 import Counter from './components/Counter';
@@ -32,31 +33,52 @@ function App() {
   };
   return (
     <div className='App'>
-      <Header />
-      <Infos />
+      <Router>
+        <Switch>
+          <Route path='/todolist'>
+            <Header />
+            <ToDoList />
+          </Route>
+          <Route path='/counter'>
+            <Header />
+            <Counter />
+          </Route>
+          <Route path='/timer'>
+            <Header />
+            <div className='timer'>
+              <h2>Utiliser UseEffect et le cycle de vie d'un composant</h2>
+              <p>Ouvrir la console</p>
+              <h1>Compte à rebours</h1>
+              {isStart && <Timer />}
+              <button type='button' onClick={handleClick}>
+                {isStart ? 'Stop timer' : 'Start timer'}
+              </button>
+            </div>
+          </Route>
+          <Route path='/Checkbox'>
+            <Header />
+            <div className='checkbox'>
+              <p>Props & State</p>
+              <h1>Click the button to check the box</h1>
+              <Button active={active} handleChange={handleChange} />
+              <Checkbox active={active} handleChange={handleChange} />
+            </div>
+          </Route>
+          <Route path='/API'>
+            <Header />
+            <APIList />
+          </Route>
+          <Route path='/'>
+            <Header />
+            <Infos />
+          </Route>
+        </Switch>
+      </Router>
       <PropsParent />
       <MapParent items={list} />
       <FilterParent items={list} />
       <FilterButton items={list} />
-      <ToDoList />
-      <Counter />
       <Form />
-      <div className='checkbox'>
-        <p>Props & State</p>
-        <h1>Click the button to check the box</h1>
-        <Button active={active} handleChange={handleChange} />
-        <Checkbox active={active} handleChange={handleChange} />
-      </div>
-      <APIList />
-      <div className='timer'>
-        <h2>Utiliser UseEffect et le cycle de vie d'un composant</h2>
-        <p>Ouvrir la console</p>
-        <h1>Compte à rebours</h1>
-        {isStart && <Timer />}
-        <button type='button' onClick={handleClick}>
-          {isStart ? 'Stop timer' : 'Start timer'}
-        </button>
-      </div>
     </div>
   );
 }

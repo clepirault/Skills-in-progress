@@ -9,12 +9,15 @@ function ToDoList() {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    setNewTask("");
-    setTask([...task, newTask])
-  }
+    setNewTask('');
+    setTask([...task, newTask]);
+  };
   return (
-    <div className="todolist">
-      <p>Mettre en pratique le State et l'interception des évènements avec un exercice simple :</p>
+    <div className='todolist'>
+      <p>
+        Mettre en pratique le State et l'interception des évènements avec un
+        exercice simple :
+      </p>
       <h1>To-do list</h1>
       <ul>
         {task.map((element, index) => (
@@ -22,8 +25,9 @@ function ToDoList() {
         ))}
       </ul>
       <form onSubmit={handleSubmit}>
-        <input type='text' value={newTask} onChange={handleChange} /><br />
-        <button type="submit">Ajouter une tâche</button>
+        <input type='text' value={newTask} onChange={handleChange} />
+        <br />
+        <button type='submit'>Ajouter une tâche</button>
       </form>
     </div>
   );
