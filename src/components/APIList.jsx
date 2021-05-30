@@ -15,6 +15,7 @@ function APIList() {
   }
   return (
     <div className='api'>
+      <p>Exercice pour mise en pratique d'Axios</p>
       <h1>Obtenir l'API d'Harry Potter</h1>
       <button type='button' onClick={getItem}>
         Get Harry Potter API

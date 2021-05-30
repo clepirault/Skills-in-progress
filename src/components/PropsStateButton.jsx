@@ -1,7 +1,7 @@
 function Button(props){
   return(
     <div>
-      <button type="button" onClick={props.handleChange}>{props.active ? "ON" : "OFF"}</button>
+      <button type="button" onClick={props.handleChange}>{props.active ? "Click to uncheck the box" : "Click to check the box"}</button>
     </div>
   );
 }

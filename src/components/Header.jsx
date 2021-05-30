@@ -4,9 +4,9 @@ function Header(){
   return(
     <div className="header">
       <ul className="headerNav">
-        <li>To-do list</li>
-        <li>Favoris</li>
-        <li>Local storage</li>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
       </ul>
     </div>
   );

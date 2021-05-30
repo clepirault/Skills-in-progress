@@ -11,6 +11,7 @@ import MapParent from './components/MapParent';
 import PropsParent from './components/PropsParent';
 import Button from './components/PropsStateButton';
 import Checkbox from './components/PropsStateCheckbox';
+import Timer from './components/Timer';
 import ToDoList from './components/ToDoList';
 
 const list = [
@@ -21,12 +22,14 @@ const list = [
 ];
 
 function App() {
-
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
   const handleChange = () => {
     setActive(!active);
   };
-  
+  const [isStart, setIsStart] = useState(false);
+  const handleClick = () => {
+    setIsStart((previousState) => !previousState);
+  };
   return (
     <div className='App'>
       <Header />
@@ -45,6 +48,15 @@ function App() {
         <Checkbox active={active} handleChange={handleChange} />
       </div>
       <APIList />
+      <div className='timer'>
+        <h2>Utiliser UseEffect et le cycle de vie d'un composant</h2>
+        <p>Ouvrir la console</p>
+        <h1>Compte à rebours</h1>
+        {isStart && <Timer />}
+        <button type='button' onClick={handleClick}>
+          {isStart ? 'Stop timer' : 'Start timer'}
+        </button>
+      </div>
     </div>
   );
 }
