@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import APIItem from './components/APIItem';
 import APIList from './components/APIList';
 import Counter from './components/Counter';
 import FilterButton from './components/FilterButton';
@@ -64,20 +65,24 @@ function App() {
               <Checkbox active={active} handleChange={handleChange} />
             </div>
           </Route>
-          <Route path='/API'>
+          <Route exact path='/API'>
             <Header />
             <APIList />
           </Route>
+          <Route exact path='/API/:name' component={APIItem} />
+            {/* <Header />
+            <APIItem />
+          </Route> */}
           <Route path='/'>
             <Header />
             <Infos />
           </Route>
         </Switch>
       </Router>
-      <PropsParent />
+      {/* <PropsParent />
       <MapParent items={list} />
       <FilterParent items={list} />
-      <FilterButton items={list} />
+      <FilterButton items={list} /> */}
       <Form />
     </div>
   );

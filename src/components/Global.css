@@ -39,10 +39,25 @@ a {
 .api {
   background-color: darkturquoise;
 }
+.apiList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .apiDetail {
   width: 25%;
   border: 1px solid black;
   background-color: white;
+}
+.apiDetail a {
+  color: black;
+  border: 1px solid black;
+  background-color: chartreuse;
+}
+.apiItem a {
+  color: black;
+  border: 1px solid black;
+  background-color: chartreuse;
 }
 .apiImg {
   width: 5em;

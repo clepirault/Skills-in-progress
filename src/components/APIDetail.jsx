@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Global.css';
 
 function APIDetail(props) {
@@ -6,6 +7,7 @@ function APIDetail(props) {
       <h1>Name: {props.name} </h1>
       <h2>House: {props.house} </h2>
       <img className="apiImg" src={props.image} alt={props.name} />
+      <Link to={`/API/${props.name}`}>Wizard detail</Link>
     </div>
   );
 }
