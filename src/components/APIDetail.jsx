@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import './Global.css';
 
 function APIDetail(props) {
   return (

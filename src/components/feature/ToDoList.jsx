@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Global.css';
+import MainLayout from '../layout/MainLayout';
 
 function ToDoList() {
   const [newTask, setNewTask] = useState('');
@@ -13,7 +13,7 @@ function ToDoList() {
     setTask([...task, newTask]);
   };
   return (
-    <div className='todolist'>
+    <MainLayout>
       <p>
         Mettre en pratique le State et l'interception des évènements avec un
         exercice simple :
@@ -29,7 +29,7 @@ function ToDoList() {
         <br />
         <button type='submit'>Ajouter une tâche</button>
       </form>
-    </div>
+    </MainLayout>
   );
 }
 export default ToDoList;

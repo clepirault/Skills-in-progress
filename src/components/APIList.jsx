@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import APIDetail from './APIDetail';
-import './Global.css';
 
 function APIList() {
   const [wizard, setWizard] = useState([]);
@@ -27,6 +26,7 @@ function APIList() {
       <button type='button' onClick={handleClick}>
         Get gryffindor wizards only
       </button>
+      <p>Ajouter un champs de recherche</p>
       <div className="apiList">
         {wizard
           .filter(

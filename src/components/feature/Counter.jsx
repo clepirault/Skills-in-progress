@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Global.css';
+import MainLayout from '../layout/MainLayout';
 
 function Counter() {
   const [counter, setCounter] = useState(0);
@@ -7,12 +7,12 @@ function Counter() {
     setCounter(counter + 1);
   };
   return (
-    <div className='counter'>
+    <MainLayout>
       <p>Un autre exercice simple :</p>
       <h1>Compteur basique</h1>
       <h2>{counter}</h2>
       <button onClick={handleClick}>+1</button>
-    </div>
+    </MainLayout>
   );
 }
 

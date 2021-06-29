@@ -1,8 +1,10 @@
-function Infos(){
-  return(
-    <div>
-      <p>Démo de ce que je sais faire en React</p>
-    </div>
+import MainLayout from './layout/MainLayout';
+
+function Infos() {
+  return (
+    <MainLayout>
+      <p>Bienvenue sur ma plateforme de compétences</p>
+    </MainLayout>
   );
 }
 
