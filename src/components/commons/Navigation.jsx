@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
+import './Navigation.css';
 
 function Navigation() {
   return (
     <div>
-      <ul>
-        <li>
+      <ul className="navigation">
+        <li className="HomeLink">
           <Link to='/'>Home</Link>
         </li>
         <li>
@@ -20,10 +21,7 @@ function Navigation() {
           <Link to='/checkbox'>Checkbox</Link>
         </li>
         <li>
-          <Link to='/list'>List</Link>
-        </li>
-        <li>
-          <Link to='/newlist'>New list</Link>
+          <Link to='/context'>Context</Link>
         </li>
         <li>
           <Link to='/API'>API</Link>

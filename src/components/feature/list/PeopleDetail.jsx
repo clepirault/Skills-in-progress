@@ -1,4 +1,4 @@
-function DetailList(props) {
+function PeopleDetail(props) {
   return (
     <div>
       <ul>
@@ -9,4 +9,4 @@ function DetailList(props) {
   );
 }
 
-export default DetailList;
+export default PeopleDetail;

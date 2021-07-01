@@ -3,8 +3,8 @@ import MainRouter from './components/router/MainRouter';
 import PeopleContext from './components/context/PeopleContext';
 
 function App() {
-  const [peopleList, setPeopleList] = useState(null);
-  const peopleValues = { peopleList: peopleList, setPeopleList: setPeopleList };
+  const [people, setPeople] = useState([]);
+  const peopleValues = { people: people, setPeople: setPeople };
   return (
     <div>
       <PeopleContext.Provider value={peopleValues}>

@@ -3,27 +3,17 @@ import { useContext } from 'react';
 import PeopleContext from '../../context/PeopleContext';
 import PeopleDetail from './PeopleDetail';
 
-const people = [
-  { name: 'Paul', city: 'Nantes' },
-  { name: 'Julien', city: 'Paris' },
-  { name: 'Alice', city: 'Lyon' },
-  { name: 'Thomas', city: 'Lille' },
-];
-
-function List() {
-  const { peopleList, setPeopleList } = useContext(PeopleContext);
-  setPeopleList(people);
-  console.log(peopleList);
+function PeopleList() {
+  const { people } = useContext(PeopleContext);
   return (
-    <div>
-      <MainLayout>
-        <h1>List of people</h1>
-        {people.map((element, index)=>(
+    <MainLayout>
+    <h1>List of people displayed from context</h1>
+    <p>To display the list, we need to visit the "List" page at first, and then, go back here !</p>
+    {people.map((element, index)=>(
           <PeopleDetail key={index} {...element}/>
         ))}
-      </MainLayout>
-    </div>
+    </MainLayout>
   );
 }
 
-export default List;
+export default PeopleList;

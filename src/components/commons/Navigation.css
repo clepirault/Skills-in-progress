@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.HomeLink {
+  border: 2px solid white;
+  padding: 1em;
+  border-radius: 1em;
+}
