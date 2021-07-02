@@ -1,7 +1,12 @@
-.homeTitle {
-  text-align: center;
-  margin-top: 1em;
+.homeDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20vh;
+  justify-content: space-around;
   margin-bottom: 2em;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 /* HOMEDETAIL COMPONENT */

@@ -17,9 +17,7 @@ function Context() {
         </p>
         <HomeDetail>
           <Link to='/list'>List</Link>
-
           <Link to='/peoplelist'>People list</Link>
-
           <Link to='/activitylist'>Activity list</Link>
         </HomeDetail>
       </div>

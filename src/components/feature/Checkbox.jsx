@@ -1,5 +1,14 @@
-import { useState } from "react";
+import { useState } from 'react';
 import MainLayout from '../layout/MainLayout';
+import CheckboxDetail from './CheckboxDetail';
+import CheckboxButton from './CheckboxButton';
+import Table from '../commons/Table';
+import './Feature.css';
+
+const table = {
+  title: 'Click the button to check the box',
+  head: 'Notions',
+};
 
 function Checkbox() {
   const [active, setActive] = useState(false);
@@ -8,16 +17,17 @@ function Checkbox() {
   };
   return (
     <MainLayout>
-      <p>Props & State</p>
-      <h1>Click the button to check the box</h1>
-      <button active={active} handleChange={handleChange}>{active}</button>
-      <label htmlFor='checkbox'>Checkbox</label>
-      <input
-        id='checkbox'
-        type='checkbox'
-        onChange={handleChange}
-        checked={active}
-      />
+      <div>
+        <Table tableTitle={table.title} tableHead={table.head}>
+          <>Props</>
+          <>State</>
+          <>Trois composants</>
+        </Table>
+        <div className="checkbox">
+          <CheckboxButton active={active} handleChange={handleChange} />
+          <CheckboxDetail active={active} handleChange={handleChange} />
+        </div>
+      </div>
     </MainLayout>
   );
 }

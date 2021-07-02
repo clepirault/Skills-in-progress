@@ -1,5 +1,12 @@
 import { useState } from 'react';
 import MainLayout from '../layout/MainLayout';
+import './Feature.css';
+import Table from '../commons/Table';
+
+const table = {
+  title: 'To-do list',
+  head: 'Notions',
+};
 
 function ToDoList() {
   const [newTask, setNewTask] = useState('');
@@ -14,21 +21,22 @@ function ToDoList() {
   };
   return (
     <MainLayout>
-      <p>
-        Mettre en pratique le State et l'interception des évènements avec un
-        exercice simple :
-      </p>
-      <h1>To-do list</h1>
-      <ul>
-        {task.map((element, index) => (
-          <li key={index}>{element}</li>
-        ))}
-      </ul>
-      <form onSubmit={handleSubmit}>
-        <input type='text' value={newTask} onChange={handleChange} />
-        <br />
-        <button type='submit'>Ajouter une tâche</button>
-      </form>
+      <Table tableTitle={table.title} tableHead={table.head}>
+        <>State</>
+        <>Interception des évènements</>
+        <>Un seul composant</>
+      </Table>
+      <div className='todolist'>
+        <ul>
+          {task.map((element, index) => (
+            <li key={index}>{element}</li>
+          ))}
+        </ul>
+        <form onSubmit={handleSubmit} className="todolistForm">
+          <input type='text' value={newTask} onChange={handleChange} placeholder="Add a task"/>
+          <button type='submit'>Add</button>
+        </form>
+      </div>
     </MainLayout>
   );
 }

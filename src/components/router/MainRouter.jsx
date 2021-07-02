@@ -8,7 +8,6 @@ import APIItem from '../APIItem';
 import Home from '../Home';
 import List from '../feature/list/List';
 import PeopleList from '../feature/list/PeopleList';
-import ActivityProvider from '../context/ActivityContext';
 import ActivityList from '../feature/list/ActivityList';
 import Context from '../feature/Context';
 
@@ -33,17 +32,13 @@ function MainRouter() {
             <Context />
           </Route>
           <Route exact path='/list'>
-            <ActivityProvider>
-              <List />
-            </ActivityProvider>
+            <List />
           </Route>
           <Route exact path='/peoplelist'>
             <PeopleList />
           </Route>
           <Route exact path='/activitylist'>
-            <ActivityProvider>
-              <ActivityList />
-            </ActivityProvider>
+            <ActivityList />
           </Route>
           <Route exact path='/API'>
             <APIList />
