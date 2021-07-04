@@ -1,14 +1,11 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ToDoList from '../feature/ToDoList';
 import Counter from '../feature/Counter';
-import Timer from '../feature/Timer';
-import Checkbox from '../feature/Checkbox';
+import Timer from '../feature/timer/Timer';
+import Checkbox from '../feature/checkbox/Checkbox';
 import APIList from '../APIList';
 import APIItem from '../APIItem';
 import Home from '../Home';
-import List from '../feature/list/List';
-import PeopleList from '../feature/list/PeopleList';
-import ActivityList from '../feature/list/ActivityList';
 import Context from '../feature/Context';
 
 function MainRouter() {
@@ -30,15 +27,6 @@ function MainRouter() {
           </Route>
           <Route path='/context'>
             <Context />
-          </Route>
-          <Route exact path='/list'>
-            <List />
-          </Route>
-          <Route exact path='/peoplelist'>
-            <PeopleList />
-          </Route>
-          <Route exact path='/activitylist'>
-            <ActivityList />
           </Route>
           <Route exact path='/API'>
             <APIList />

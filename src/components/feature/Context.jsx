@@ -1,26 +1,20 @@
-import { Link } from 'react-router-dom';
-import HomeDetail from '../HomeDetail';
 import MainLayout from '../layout/MainLayout';
+import './Feature.css';
+import Code from '../commons/Code';
+import { TextContent } from '../commons/TextContent';
 
 function Context() {
   return (
     <MainLayout>
       <div>
-        <p>
-          En allant visiter mon repo Github, je peux voir deux techniques pour
-          la mise en place du Context dans React. <br /> La première se trouvant
-          dans App, j'initialise ici mon State et j'englobe le Router de mon
-          Provider. Ainsi je peux utiliser ce Context partout dans l'application. <br /> La seconde se trouve dans le composant de mon Context
-          : ActivityContext, où j'y initialise mon State et mets en place les props
-          pour mon Provider. On retrouvera ainsi ce dernier dans MainRouter,
-          englobant le(s) composant(s) concernés.
+        <p className="contextDescription">
+          Avez-vous remarqué le status dans l'en-tête de mon site ? <br />
+          Ainsi que le bouton dans le bas de page ? <br />
+          Amusez-vous à vous connecter et vous deconnecter tout en navigant dans le site. <br />
+          J'ai ici mis en place React Context pour cette fonctionnalité.
         </p>
-        <HomeDetail>
-          <Link to='/list'>List</Link>
-          <Link to='/peoplelist'>People list</Link>
-          <Link to='/activitylist'>Activity list</Link>
-        </HomeDetail>
       </div>
+      <Code link={TextContent.link3}/>
     </MainLayout>
   );
 }

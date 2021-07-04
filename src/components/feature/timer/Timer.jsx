@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import TimerDetail from './TimerDetail';
-import MainLayout from '../layout/MainLayout';
+import MainLayout from '../../layout/MainLayout';
 
 function Timer() {
   const [isStart, setIsStart] = useState(false);
   const handleClick = () => {
     setIsStart((previousState) => !previousState);
+    setTimeout(() => {
+      setIsStart(false);
+    }, 60000);
   };
   return (
     <MainLayout>

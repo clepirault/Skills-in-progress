@@ -6,3 +6,8 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.status {
+  font-size: 0.7em;
+  margin-left: 2em;
+}

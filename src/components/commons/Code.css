@@ -1,0 +1,9 @@
+.codeIcon {
+  position: fixed;
+  bottom: 4em;
+  right: 1em;
+  display: flex;
+  align-items: center;
+  width: 9em;
+  justify-content: space-between;
+}

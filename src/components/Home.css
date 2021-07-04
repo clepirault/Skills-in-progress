@@ -21,8 +21,8 @@
 .homeDetail {
   height: 10em;
   width: 10em;
-  background-color: #7ee8fa;
-  background-image: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
   border-radius: 2em;
   display: flex;
   justify-content: center;
