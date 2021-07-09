@@ -4,8 +4,8 @@ function APIItem(props) {
   const params = props.match.params;
   return (
     <div className="apiItem">
-      <h1>Name:{params.name}</h1>
-      <Link to='/API'>Retour</Link>
+      <h1>{params.name}</h1>
+      <Link to='/API' style={{color: "black"}} >Retour</Link>
     </div>
   );
 }

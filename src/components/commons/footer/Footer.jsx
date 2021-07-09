@@ -1,6 +1,6 @@
 import './Footer.css';
 import { useContext } from 'react';
-import { StatusContext } from '../context/StatusContext';
+import { StatusContext } from '../../context/StatusContext';
 
 function Footer() {
   const { status, toggleStatus } = useContext(StatusContext);

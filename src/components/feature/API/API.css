@@ -1,0 +1,46 @@
+.character {
+  /* TOUS LES PERSONNAGES */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.apiSearch {
+  /* CHAMP DE RECHERCHE */
+  display: flex;
+  width: 15em;
+  margin: auto;
+  margin-bottom: 4em;
+  border-radius: 1em;
+  border: 1px solid silver;
+}
+
+.characterDetail {
+  /* FICHE PERSONNAGE */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+  margin-bottom: 2em;
+}
+
+.detailLink {
+  /* LIEN VERS DETAIL DU PERSONNAGE */
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  border-radius: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-top: 1em;
+}
+.detailLink:hover {
+  opacity: 0.5;
+}
+
+.characterDetail img {
+  /* IMAGE */
+  width: 8em;
+  height: 10em;
+  border-radius: 50%;
+}

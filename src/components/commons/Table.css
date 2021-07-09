@@ -1,17 +1,9 @@
-.tableTitle {
-  text-align: center;
-}
-
-.table {
+.table { 
+  /* BLOC NOTIONS */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* border-collapse: collapse; */
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
   margin-left: 2em;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius:1em;
   padding-bottom: 0.5em;
   width: 15em;
   background-color: #d9d9d9;
@@ -19,8 +11,7 @@
 }
 
 .tableHead {
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
+  /* TITRE TABLE */
   background-color: #4dccc6;
   background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
 }

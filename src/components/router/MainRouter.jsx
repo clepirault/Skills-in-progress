@@ -3,39 +3,28 @@ import ToDoList from '../feature/ToDoList';
 import Counter from '../feature/Counter';
 import Timer from '../feature/timer/Timer';
 import Checkbox from '../feature/checkbox/Checkbox';
-import APIList from '../APIList';
-import APIItem from '../APIItem';
-import Home from '../Home';
+import APIList from '../feature/API/APIList';
+import APIItem from '../feature/API/APIItem';
+import Home from '../feature/home/Home';
 import Context from '../feature/Context';
+import MainLayout from '../layout/MainLayout';
 
 function MainRouter() {
   return (
     <div>
       <Router>
+        <MainLayout>
         <Switch>
-          <Route path='/todolist'>
-            <ToDoList />
-          </Route>
-          <Route path='/counter'>
-            <Counter />
-          </Route>
-          <Route path='/timer'>
-            <Timer />
-          </Route>
-          <Route path='/checkbox'>
-            <Checkbox />
-          </Route>
-          <Route path='/context'>
-            <Context />
-          </Route>
-          <Route exact path='/API'>
-            <APIList />
-          </Route>
+          <Route path='/todolist' component={ToDoList} />
+          <Route path='/counter' component={Counter} />
+          <Route path='/timer' component={Timer} />
+          <Route path='/checkbox' component={Checkbox} />
+          <Route path='/context' component={Context} />
+          <Route exact path='/API' component={APIList} />
           <Route exact path='/API/:name' component={APIItem} />
-          <Route path='/'>
-            <Home />
-          </Route>
+          <Route path='/' component={Home} />
         </Switch>
+        </MainLayout>
       </Router>
     </div>
   );

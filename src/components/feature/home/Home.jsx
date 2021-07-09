@@ -1,11 +1,10 @@
-import MainLayout from './layout/MainLayout';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import HomeDetail from './HomeDetail';
 
 function Home() {
   return (
-    <MainLayout>
+    <div>
       <div className='homeDescription'>
         <h1>Bienvenue !</h1>
         <p>
@@ -20,7 +19,7 @@ function Home() {
         <Link to="/timer">Timer</Link>
         <Link to="/checkbox">Checkbox</Link>
       </HomeDetail>
-    </MainLayout>
+    </div>
   );
 }
 

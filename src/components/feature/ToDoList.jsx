@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import MainLayout from '../layout/MainLayout';
 import './Feature.css';
 import Table from '../commons/Table';
-import { TextContent } from '../commons/TextContent';
+import { TextContent } from '../../TextContent';
 import Code from '../commons/Code';
 
 function ToDoList() {
@@ -17,11 +16,12 @@ function ToDoList() {
     setTask([...task, newTask]);
   };
   return (
-    <MainLayout>
-      <Table tableTitle={TextContent.title2} tableHead={TextContent.head}>
-        <>UseState</>
-        <>Handling events</>
-        <>Map</>
+    <div>
+      <h2>{TextContent.title2}</h2>
+      <Table tableHead={TextContent.head}>
+        <>{TextContent.notion5}</>
+        <>{TextContent.notion2}</>
+        <>{TextContent.notion3}</>
       </Table>
       <div className='todolist'>
         <ul>
@@ -35,7 +35,7 @@ function ToDoList() {
         </form>
       </div>
       <Code link={TextContent.link2}/>
-    </MainLayout>
+    </div>
   );
 }
 export default ToDoList;

@@ -1,7 +1,7 @@
-import Navigation from "./Navigation";
+import Navigation from "../navigation/Navigation";
 import './Header.css';
 import { useContext } from "react";
-import { StatusContext } from "../context/StatusContext";
+import { StatusContext } from "../../context/StatusContext";
 
 function Header() {
   const { status } = useContext(StatusContext);

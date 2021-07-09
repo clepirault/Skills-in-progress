@@ -1,5 +1,5 @@
-import Header from '../commons/Header';
-import Footer from '../commons/Footer';
+import Header from '../commons/header/Header';
+import Footer from '../commons/footer/Footer';
 
 function MainLayout({ children }) {
   return (

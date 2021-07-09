@@ -1,7 +1,7 @@
 .header {
   background-color: #2a2a72;
   background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
-  height: 10vh;
+  height: 12vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

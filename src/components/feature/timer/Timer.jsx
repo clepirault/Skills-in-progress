@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import TimerDetail from './TimerDetail';
-import MainLayout from '../../layout/MainLayout';
 
 function Timer() {
   const [isStart, setIsStart] = useState(false);
@@ -11,7 +10,7 @@ function Timer() {
     }, 60000);
   };
   return (
-    <MainLayout>
+    <div>
       <h2>Utiliser UseEffect et le cycle de vie d'un composant</h2>
       <p>Ouvrir la console</p>
       <h1>Compte à rebours</h1>
@@ -19,7 +18,7 @@ function Timer() {
       <button type='button' onClick={handleClick}>
         {isStart ? 'Stop timer' : 'Start timer'}
       </button>
-    </MainLayout>
+    </div>
   );
 }
 

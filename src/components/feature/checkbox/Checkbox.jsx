@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import MainLayout from '../../layout/MainLayout';
 import CheckboxDetail from './CheckboxDetail';
 import CheckboxButton from './CheckboxButton';
 import Table from '../../commons/Table';
 import '../Feature.css';
-import { TextContent } from '../../commons/TextContent';
+import { TextContent } from '../../../TextContent';
 import Code from '../../commons/Code';
 
 function Checkbox() {
@@ -13,12 +12,13 @@ function Checkbox() {
     setActive(!active);
   };
   return (
-    <MainLayout>
+    <div>
       <div>
-        <Table tableTitle={TextContent.title1} tableHead={TextContent.head}>
-          <>UseState</>
-          <>Props</>
-          <>Passer les props vers deux composants enfants</>
+        <h2>{TextContent.title1}</h2>
+        <Table tableHead={TextContent.head}>
+          <>{TextContent.notion5}</>
+          <>{TextContent.notion1}</>
+          <>{TextContent.notion6}</>
         </Table>
         <div className='checkbox'>
           <CheckboxButton active={active} handleChange={handleChange} />
@@ -26,7 +26,7 @@ function Checkbox() {
         </div>
       </div>
       <Code link={TextContent.link1}/>
-    </MainLayout>
+    </div>
   );
 }
 
