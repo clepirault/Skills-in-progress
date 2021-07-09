@@ -11,7 +11,6 @@ import MainLayout from '../layout/MainLayout';
 
 function MainRouter() {
   return (
-    <div>
       <Router>
         <MainLayout>
         <Switch>
@@ -26,7 +25,6 @@ function MainRouter() {
         </Switch>
         </MainLayout>
       </Router>
-    </div>
   );
 }
 

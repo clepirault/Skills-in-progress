@@ -13,19 +13,17 @@ function Checkbox() {
   };
   return (
     <div>
-      <div>
-        <h2>{TextContent.title1}</h2>
-        <Table tableHead={TextContent.head}>
-          <>{TextContent.notion5}</>
-          <>{TextContent.notion1}</>
-          <>{TextContent.notion6}</>
-        </Table>
-        <div className='checkbox'>
-          <CheckboxButton active={active} handleChange={handleChange} />
-          <CheckboxDetail active={active} handleChange={handleChange} />
-        </div>
+      <h2 style={{ textAlign: 'center' }}>Click the button to check the box</h2>
+      <Table>
+        <>{TextContent.notion5}</>
+        <>{TextContent.notion1}</>
+        <>Passer en props le state vers plusieurs composants</>
+      </Table>
+      <div className='checkbox'>
+        <CheckboxButton active={active} handleChange={handleChange} />
+        <CheckboxDetail active={active} handleChange={handleChange} />
       </div>
-      <Code link={TextContent.link1}/>
+      <Code link={TextContent.link1} />
     </div>
   );
 }

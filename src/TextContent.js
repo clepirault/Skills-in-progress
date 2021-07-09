@@ -6,10 +6,10 @@ export const TextContent = {
   notion4: 'Filter & Map',
   notion5: 'State',
   notion6: 'Lift the State',
-  title1: 'Click the button to check the box',
-  title2: 'To-do list',
+  notion7: 'Axios',
+  notion8: 'Context',
   link1: 'https://github.com/clepirault/Skills-in-progress/blob/master/src/components/feature/checkbox/Checkbox.jsx',
   link2: 'https://github.com/clepirault/Skills-in-progress/blob/master/src/components/feature/ToDoList.jsx',
   link3: 'https://github.com/clepirault/Skills-in-progress/blob/master/src/components/context/StatusContext.jsx',
-  link4: 'https://github.com/clepirault/Skills-in-progress/blob/master/src/components/context/StatusContext.jsx',
+  link4: 'https://github.com/clepirault/Skills-in-progress/blob/master/src/components/feature/API/APIList.jsx',
 };

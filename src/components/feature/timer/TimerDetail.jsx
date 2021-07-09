@@ -13,7 +13,7 @@ function TimerDetail() {
     };
   }, []);
   return (
-      <div className='timer'>
+    <div className='timer'>
       <h1>{timer}</h1>
     </div>
   );

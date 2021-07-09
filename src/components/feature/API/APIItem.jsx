@@ -4,7 +4,7 @@ function APIItem(props) {
   const params = props.match.params;
   return (
     <div className="apiItem">
-      <h1>{params.name}</h1>
+      <h3>{params.name}</h3>
       <Link to='/API' style={{color: "black"}} >Retour</Link>
     </div>
   );

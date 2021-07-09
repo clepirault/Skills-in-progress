@@ -3,7 +3,6 @@ import './Navigation.css';
 
 function Navigation() {
   return (
-    <div>
       <ul className="navigation">
         <li className="HomeLink">
           <Link to='/'>Home</Link>
@@ -27,7 +26,6 @@ function Navigation() {
           <Link to='/API'>API</Link>
         </li>
       </ul>
-    </div>
   );
 }
 

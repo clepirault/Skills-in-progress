@@ -17,8 +17,8 @@ function ToDoList() {
   };
   return (
     <div>
-      <h2>{TextContent.title2}</h2>
-      <Table tableHead={TextContent.head}>
+      <h2 style={{textAlign: 'center'}}>To-do list</h2>
+      <Table>
         <>{TextContent.notion5}</>
         <>{TextContent.notion2}</>
         <>{TextContent.notion3}</>

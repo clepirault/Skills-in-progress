@@ -11,9 +11,9 @@
   display: flex;
   width: 15em;
   margin: auto;
-  margin-bottom: 4em;
+  margin-bottom: 8em;
   border-radius: 1em;
-  border: 1px solid silver;
+  border: 2px solid black;
 }
 
 .characterDetail {

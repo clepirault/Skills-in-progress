@@ -3,17 +3,18 @@ import { useEffect, useState } from 'react';
 import APIDetail from './APIDetail';
 import './API.css';
 import Code from '../../commons/Code';
+import Table from '../../commons/Table';
 import { TextContent } from '../../../TextContent';
 
 function APIList() {
-  const [wizard, setWizard] = useState([]);
+  const [character, setCharacter] = useState([]);
 
   useEffect(() => {
     axios
       .get('http://hp-api.herokuapp.com/api/characters')
       .then((response) => response.data)
       .then((data) => {
-        setWizard(data);
+        setCharacter(data);
       });
   }, []);
 
@@ -24,7 +25,13 @@ function APIList() {
 
   return (
     <div>
-      <h1>API d'Harry Potter</h1>
+      <h2 style={{ textAlign: 'center' }}>API de l'univers Harry Potter</h2>
+      <Table>
+        <>{TextContent.notion5}</>
+        <>{TextContent.notion2}</>
+        <>{TextContent.notion4}</>
+        <>{TextContent.notion7}</>
+      </Table>
       <input
         type='text'
         placeholder='🔍Rechercher'
@@ -32,7 +39,7 @@ function APIList() {
         className='apiSearch'
       />
       <div className='character'>
-        {wizard
+        {character
           .filter(
             (element) =>
               element.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -42,7 +49,7 @@ function APIList() {
             <APIDetail key={index} {...element} />
           ))}
       </div>
-      <Code link={TextContent.link2} />
+      <Code link={TextContent.link4} />
     </div>
   );
 }
