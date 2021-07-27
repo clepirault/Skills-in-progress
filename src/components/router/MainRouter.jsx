@@ -14,14 +14,14 @@ function MainRouter() {
       <Router>
         <MainLayout>
         <Switch>
-          <Route path='/todolist' component={ToDoList} />
-          <Route path='/counter' component={Counter} />
-          <Route path='/timer' component={Timer} />
-          <Route path='/checkbox' component={Checkbox} />
-          <Route path='/context' component={Context} />
+          <Route exact path='/todolist' component={ToDoList} />
+          <Route exact path='/counter' component={Counter} />
+          <Route exact path='/timer' component={Timer} />
+          <Route exact path='/checkbox' component={Checkbox} />
+          <Route exact path='/context' component={Context} />
           <Route exact path='/API' component={APIList} />
           <Route exact path='/API/:name' component={APIItem} />
-          <Route path='/' component={Home} />
+          <Route exact path='/' component={Home} />
         </Switch>
         </MainLayout>
       </Router>

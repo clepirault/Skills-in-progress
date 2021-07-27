@@ -1,23 +1,13 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import APIDetail from './APIDetail';
 import './API.css';
 import Code from '../../commons/Code';
 import Table from '../../commons/Table';
 import { TextContent } from '../../../TextContent';
+import { APIContext } from '../../context/APIContext';
 
 function APIList() {
-  const [character, setCharacter] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get('http://hp-api.herokuapp.com/api/characters')
-      .then((response) => response.data)
-      .then((data) => {
-        setCharacter(data);
-      });
-  }, []);
-
+  const { character } = useContext(APIContext);
   const [search, setSearch] = useState('');
   const handleChange = (e) => {
     setSearch(e.target.value);
@@ -31,6 +21,7 @@ function APIList() {
         <>{TextContent.notion2}</>
         <>{TextContent.notion4}</>
         <>{TextContent.notion7}</>
+        <>{TextContent.notion9} + {TextContent.notion8}</>
       </Table>
       <input
         type='text'

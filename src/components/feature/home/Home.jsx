@@ -16,8 +16,8 @@ function Home() {
       <HomeDetail>
         <Link to='/todolist'>To-do-list</Link>
         <Link to='/counter'>Compteur</Link>
-        <Link to="/timer">Timer</Link>
         <Link to="/checkbox">Checkbox</Link>
+        <Link to="/api">API Harry Potter</Link>
       </HomeDetail>
     </div>
   );

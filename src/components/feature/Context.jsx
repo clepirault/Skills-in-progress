@@ -10,13 +10,14 @@ function Context() {
         <h2 style={{ textAlign: 'center' }}>Context</h2>
         <Table>
           <>{TextContent.notion8}</>
-          <>Session d'utilisateur</>
+          <>{""}</>
         </Table>
         <p className='contextDescription'>
           Avez-vous remarqué le status dans l'en-tête ? <br />
           Ainsi que le bouton dans le bas de page ? <br />
           Vous pouvez vous connecter et vous deconnecter tout en navigant dans
-          l'application.
+          l'application. <br /> <br />
+          L'API d'Harry Potter a aussi été déployée grace au Context.
         </p>
       </div>
       <Code link={TextContent.link3} />
