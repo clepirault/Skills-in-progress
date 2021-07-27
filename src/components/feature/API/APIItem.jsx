@@ -28,7 +28,7 @@ function APIItem(props) {
               <Link to='/API' className="detailLink">Retour</Link>
             </div>
         ))}
-        <Code link={TextContent.link4} />
+        <Code link={TextContent.link5} />
     </div>
   );
 }

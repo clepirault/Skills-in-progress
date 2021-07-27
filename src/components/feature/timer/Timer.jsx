@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { TextContent } from '../../../TextContent';
+import Table from '../../commons/Table';
 import TimerDetail from './TimerDetail';
 
 function Timer() {
@@ -11,13 +13,18 @@ function Timer() {
   };
   return (
     <div>
-      <h2>Utiliser UseEffect et le cycle de vie d'un composant</h2>
-      <p>Ouvrir la console</p>
-      <h1>Compte à rebours</h1>
-      {isStart && <TimerDetail />}
-      <button type='button' onClick={handleClick}>
+      <h2 style={{textAlign: 'center'}}>Compte à rebours</h2>
+      <Table>
+        <>{TextContent.notion5}</>
+        <>{TextContent.notion2}</>
+        <>{TextContent.notion10}</>
+      </Table>
+      <div className="timer">
+        {isStart && <TimerDetail />}
+        <button type='button' onClick={handleClick}>
         {isStart ? 'Stop timer' : 'Start timer'}
-      </button>
+        </button>
+      </div>
     </div>
   );
 }
