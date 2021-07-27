@@ -11,7 +11,7 @@ function APIList() {
   const { character, setCharacter } = useContext(APIContext);
   useEffect(() => {
     axios
-      .get('http://hp-api.herokuapp.com/api/characters')
+      .get('https://hp-api.herokuapp.com/api/characters')
       .then((response) => response.data)
       .then((data) => {
         setCharacter(data);
