@@ -14,10 +14,10 @@ function Home() {
         </p>
       </div>
       <HomeDetail>
-        <Link to='/todolist'>To-do-list</Link>
-        <Link to='/counter'>Compteur</Link>
-        <Link to="/checkbox">Checkbox</Link>
-        <Link to="/api">API Harry Potter</Link>
+        <Link to='/todolist' id='1'>To-do-list</Link>
+        <Link to='/counter' id='2'>Compteur</Link>
+        <Link to="/checkbox" id='3'>Checkbox</Link>
+        <Link to="/api" id='4'>API Harry Potter</Link>
       </HomeDetail>
     </div>
   );
