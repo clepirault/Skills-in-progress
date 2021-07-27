@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { TextContent } from '../../../TextContent';
+import Code from '../../commons/Code';
 import Table from '../../commons/Table';
 import TimerDetail from './TimerDetail';
 
@@ -25,6 +26,7 @@ function Timer() {
         {isStart ? 'Stop timer' : 'Start timer'}
         </button>
       </div>
+      <Code link={TextContent.link6} />
     </div>
   );
 }

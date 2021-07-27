@@ -15,4 +15,6 @@ export const TextContent = {
   link3: 'https://github.com/clepirault/clepi-react-skills/blob/master/src/components/context',
   link4: 'https://github.com/clepirault/clepi-react-skills/blob/master/src/components/feature/API',
   link5: 'https://github.com/clepirault/clepi-react-skills/blob/master/src/components/feature/API/APIItem.jsx',
+  link6: 'https://github.com/clepirault/clepi-react-skills/blob/master/src/components/feature/timer/Timer.jsx',
+  link7: 'https://github.com/clepirault/clepi-react-skills/blob/master/src/components/feature/Counter.jsx',
 };

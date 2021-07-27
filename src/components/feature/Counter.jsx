@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Table from '../commons/Table';
 import { TextContent } from '../../TextContent';
+import Code from '../commons/Code';
 
 function Counter() {
   const [counter, setCounter] = useState(0);
@@ -18,6 +19,7 @@ function Counter() {
         <div>{counter}</div>
         <button onClick={handleClick} className="counterButton">+1</button>
       </div>
+      <Code link={TextContent.link7} />
     </div>
   );
 }
