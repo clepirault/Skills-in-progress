@@ -4,7 +4,7 @@
 <p>🎓 Created all along my Wild Code School training</p>
 
 ## Goal 🎯 :
-Create a place of reference for React hooks features
+Create a place of reference for simple features in React
 
 ## Stack 💎 :
 **React**
