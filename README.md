@@ -14,7 +14,7 @@ Create a place of reference for React hooks features
 * Counter
 * Timer
 * Checkbox
-* API integration 👉 [Harry Potter external API](https://hp-api.herokuapp.com/api/characters)
+* API integration 👉 [Harry Potter API](https://hp-api.herokuapp.com/api/characters)
 
 ## Links 🔗 :
 * [Website](https://clepi-react.netlify.app/)
