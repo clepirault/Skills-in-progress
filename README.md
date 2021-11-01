@@ -8,7 +8,7 @@ Create a place of references for React features
 ## Stack 💎 :
 **React**
 
-## Features :
+## Features 📝 :
 * To-do-list
 * Counter
 * Timer
