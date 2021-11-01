@@ -1,6 +1,7 @@
 # Tools
 
 <p>👩 Personal project</p>
+<p>🎓 Created all along my Wild Code School training</p>
 
 ## Goal 🎯 :
 Create a place of references for React features
